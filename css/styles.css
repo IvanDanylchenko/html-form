@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png)
+    0 0/100% 100% no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container-form-contact {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+@media screen and (max-width: 450px) {
+  .container-form-contact {
+    min-width: 320px;
+    align-items: center;
+    padding: 5px;
+  }
+}
+
+.header-contact-form {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.header-contact-form > p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+  .header-contact-form {
+    max-width: 65%;
+    line-height: 20px;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
+}
+
+#contact-form label {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 1px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 450px) {
+  #contact-form label {
+    justify-content: center;
+    padding: 0 30px 0 30px;
+    margin: 0 auto;
+  }
+}
+
+#contact-form label > span {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  #contact-form label > span {
+    padding: 0 30px 0 30px;
+    margin: 0 auto;
+  }
+}
+
+#contact-form label > input,
+select {
+  padding: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  #contact-form input {
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+#contact-form label,
+input,
+select,
+textarea {
+  flex-basis: 76%;
+  margin-top: 5px;
+  outline: none;
+  color: black;
+}
+
+@media screen and (max-width: 780px) {
+  #contact-form label,
+  input,
+  select,
+  textarea {
+    flex-basis: 65%;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #contact-form label,
+  input,
+  select,
+  textarea {
+    flex-basis: 90%;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+#input-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 76%;
+}
+
+@media screen and (max-width: 780px) {
+  #input-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #input-container {
+    flex-basis: 82%;
+  }
+}
+
+#input-container > input {
+  max-width: 45%;
+  flex-basis: 100%;
+  padding: 5px;
+}
+
+.design-line {
+  height: 1px;
+  background-color: white;
+  margin: 15px 0 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .design-line {
+    min-width: 80%;
+  }
+}
+
+.container-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 450px) {
+  .container-btn {
+    justify-content: center;
+  }
+}
+.submit-btn {
+  flex-basis: 76%;
+  outline: none;
+  text-transform: uppercase;
+  padding: 10px;
+  background: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 780px) {
+  .submit-btn {
+    flex-basis: 65%;
+  }
+}
+
+input:not(:placeholder-shown):valid,
+select:valid,
+textarea:not(:placeholder-shown):valid {
+  background-color: rgb(155, 224, 155);
+}
+
+input:not(:placeholder-shown):invalid,
+select:invalid,
+textarea:not(:placeholder-shown):invalid {
+  background-color: rgb(252, 181, 181);
+}
